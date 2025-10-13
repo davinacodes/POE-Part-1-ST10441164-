@@ -87,9 +87,9 @@ public class Login {
     //Attempts to log in a user.
     public boolean loginUser (String username, String password) {
         if (storeUsername != null && storeUsername.equals(username) && storePassword.equals(password)) {
-            return false;
+            return true;
         }
-        return true;
+        return false;
     }
 
 
